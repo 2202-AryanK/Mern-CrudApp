@@ -28,7 +28,7 @@ mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true); // Deal with "DeprecationWarning: collection.ensureIndex is deprecated."
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 
-mongoose.connection.on('connected', (mongodb+srv://mca2202:<password>@cluster0.6izw80h.mongodb.net/?retryWrites=true&w=majority) =>
+mongoose.connection.on('connected', (mongodb+srv://mca2202:Spoof@00@cluster0.6izw80h.mongodb.net/?retryWrites=true&w=majority) =>
   console.log(`Database connected to: ${MONGODB_URI}`)
 );
 mongoose.connection.on('disconnected', () =>
